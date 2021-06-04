@@ -1,0 +1,52 @@
+Д/З Ekaterina Weber
+
+  1) Посмотреть где я     -  pwd
+  2) Создать папку        -  mkdir LinuxCourse
+  3) Зайти в папку        -  cd LinuxCourse/
+  4) Создать 3 папки      - mkdir box1 box2 box3
+  5) Зайти в любоую папку - cd box1
+  6) Создать 5 файлов     - (3 txt, 2 json)  touch file1.txt file2.txt file3.txt fail4.json file5.json
+  7) Создать 3 папки      - mkdir Department1 Department2 Department3
+  8) Вывести список содержимого папки  ls -la
+  9) Открыть любой txt файл - vi file1.txt 
+ 10) INSERT  -> Hello my name is Kate. I am glad to be here today with you and to learn Linux.
+                And what is your name?
+                My name is Boris and I dont know about Linux anything.
+                But I woud like to learn it.
+ 11) Cохранить и выйти  ESCAPE -> :wq
+ 12) Выйти из папки на уровень выше - cd ..
+ 13) переместить любые 2 файла, которые вы создали, в любую другую папку  - mv box1/file1.txt box2
+									  - mv box1/file4.json box2
+
+ 14) скопировать любые 2 файла, которые вы создали, в любую другую папку  - cp box1/file2.txt box2
+  									  - cp box1/file3.txt box2
+      									  - cp box1/file5.json box2
+
+ 15) Найти файл по имени  -  find -name file1.txt
+ 16) просмотреть содержимое в реальном времени   -  cat box2/file1.txt
+ 17) вывести несколько первых строк из текстового файла    - head -2 box2/file1.txt
+ 18) вывести несколько последних строк из текстового файла - tail -2 box2/file1.txt
+ 19) просмотреть содержимое длинного файла (команда less)  - cat box2/file1.txt | less
+ 20) вывести дату и время date -u
+
+  
+ Задание *
+1) Отправить http запрос на сервер.
+ curl https://api.quarantine.country/api/v1/regions
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+  а) открыть с помощью vim файл - vi Script2.sh 
+  б) написать в файле - #!/bin/bash
+
+               		mkdir TestScript
+			cd TestScript
+			mkdir test1 test2 test3
+			cd test3
+			touch bash1.txt bash2.txt bash3.txt bash4.json bash5.json
+			mkdir papka1 papka2 papka3
+			ls -la
+			mv /c/Users/Timon/Desktop/LinuxCourse/TestScript/test3/bash1.txt /c/Users/Timon/Desktop/LinuxCourse/TestScript/test2
+ 
+ в) запустить скрипт -  ./Script2.sh
+ 
+  
